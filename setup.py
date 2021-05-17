@@ -25,7 +25,7 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "service_checker=service_checker",
+            "service_checker=service_checker:run",
         ],
     },
 )
