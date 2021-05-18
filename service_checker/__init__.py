@@ -82,7 +82,7 @@ def run():
                 )
 
                 for time_conf_key in ["check_interval", "trigger_cooldown"]:
-                    trigger[time_conf_key] = min(15, parse_delta(trigger[time_conf_key]))
+                    trigger[time_conf_key] = max(15, parse_delta(trigger[time_conf_key]))
 
                 trigger["state_history"] = []
                 trigger["last_restart"] = 0
@@ -136,3 +136,5 @@ def run():
 
         if not did_run:
             time.sleep(1)
+
+run()
