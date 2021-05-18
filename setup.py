@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="service_checker",  # Replace with your own username
-    version="0.1.0.dev3",
+    version="0.1.0.dev4",
     author="adesso mobile solutions GmbH",
     author_email="it-operations@adesso-mobile.de",
     description="Check services with commands and trigger commands",
